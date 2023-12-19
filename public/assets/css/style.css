@@ -35,3 +35,15 @@ footer{
   height: 100px;
   background-color: grey;
 }
+
+
+/* Page Chapitre 2 */
+.mainChap2{
+  padding-top: 70px;
+  width: 75%;
+  margin:auto
+}
+.imgChap2{
+  width: 400px;
+
+}
