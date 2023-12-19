@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <title>Chapitre 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top  bg-light ">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Cours Git</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Chapitre 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Chapitre 2s</a>
+                </li>
+          </div>
+        </nav>
+      </header>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <main>
+        <h1>Git</h1>
+        <h2 class="text-center" style="color: orangered;">Introduction à Git</h2>
+        <p class="text-center"> Git est un outil essentiel, que vous travailliez seul, en équipe, ou même sur un projet en open source.Il permet de suivre les modifications de votre code et d'organiser vos projets de développement et de pouvoir les rétablir à tout moment.Les branches correspondent à une version de votre projet qui évolue de manière indépendante. Cela permet de pouvoir expérimenter des solutions sans impacter le code existant.La branche "principale" d'un projet est souvent appelée "master" ou "main". Cette branche doit être la plus saine possible.</p>
+
+        <h2 class="text-center" style="color: orangered;">Création d'un dépot git</h2>
+        <ul>
+            <li style="font-family: monospace;">cd project</li>
+            <li style="font-family: monospace;">git init</li>
+        </ul>
+        <h2 class="text-center" style="color: orangered;">Ajout des fichiers</h2>
+        <p>On peut ajouter les fichiers individuellement (1) ou tous les fichiers du projet (2).</p>
+        <ol>
+            <li style="font-family: monospace;">git add 'nomdufichier'</li>
+            <li style="font-family: monospace;">git add.</li>
+        </ol>
+
+        <h2 class="text-center" style="color: orangered;">Faire un commit</h2>
+        <p>Un commit est comme une sorte de point d'ancrage qui permet au dev de sauvegarder une version du code à un instant T avec une description de son travail. Un commit est identifié de manière unique via un hash qui lui est attribué. </p>
+        <p>La commande est la suivante : git commit -a -m "message du commit"</p>
+        <ul>
+            <li>-a pour add (on ajoute au suivi les nouveaux fichiers créés s'il y en a)</li>
+            <li>-m pour message (on décrit les modifications apportées au code)</li>
+        </ul>
+        <p>Un commit doit toujours être le plus explicite possible tout en étant concit dans sa description. </p>
+        <p class="text-danger">Attention, vous devez au préalable configurer votre git local afin qu'il puisse vous reconnaitre avant de pouvoir réaliser un commit. les étapes suivantes doivent être réaliser une seule fois. </p>
+        <ul>
+            <li style="font-family: monospace;">git config --global user.name "username"</li>
+            <li style="font-family: monospace;">git config --global user.email "votreemail@email.fr"</li>
+        </ul>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
